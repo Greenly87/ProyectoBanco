@@ -10,8 +10,7 @@ export class CuentaBancaria {
         this.#saldo = saldo;
     }
 
-    // Las subclases NO pueden tocar #saldo ni #numeroCuenta directamente,
-    // deben usar siempre estos metodos get/set.
+    
     getSaldo() {
         return this.#saldo;
     }
