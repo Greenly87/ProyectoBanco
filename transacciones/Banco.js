@@ -13,8 +13,7 @@ console.log("=== Aplicacion de intereses del banco ===\n");
 cuentas.forEach(cuenta => {
     console.log(`Antes:   ${cuenta.toString()}`);
 
-    // instanceof se valida del tipo mas especifico al mas general,
-    // porque CuentaAhorrosPremium tambien es instanceof CuentaAhorros
+    
     let tipoDetectado;
     if (cuenta instanceof CuentaAhorrosPremium) {
         tipoDetectado = "Cuenta de Ahorros Premium";
