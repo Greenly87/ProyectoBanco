@@ -9,8 +9,7 @@ export class CuentaCorriente extends CuentaBancaria {
     }
 
     calcularInteres() {
-        // Las cuentas corrientes no generan interes a favor,
-        // en cambio tienen un pequeno cargo por manejo (interes negativo)
+        
         return -(this.getSaldo() * 0.001);
     }
 
