@@ -9,7 +9,7 @@ export class CuentaAhorros extends CuentaBancaria {
     }
 
     calcularInteres() {
-        // Se usa getSaldo(), nunca se accede a #saldo directamente
+        
         return this.getSaldo() * this.#tasaInteres;
     }
 }
