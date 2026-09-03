@@ -9,7 +9,7 @@ export class CuentaAhorrosPremium extends CuentaAhorros {
     }
 
     calcularInteres() {
-        // Reutiliza el calculo del padre (CuentaAhorros) y le suma el bono
+        
         return super.calcularInteres() + this.#bonoFidelidad;
     }
 }
